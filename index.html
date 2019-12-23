@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>crud</title>
+</head>
+<body>
+    <div class="wraper" id="user-form">
+        <label for="name-input"><i class="fas fa-user-tie"></i></label>
+        <input type="text" name="name-input" id="name-input" placeholder="Name">
+        <label for="email-input" name="email-input"><i class="fas fa-at"></i></label>
+        <input type="email" name="email-input" id="email-input" placeholder="Email">
+    </div>
+    <div class="button-wraper">
+        <button class="create-btn" onclick="createNewItem()">Create</button>
+        <button class="update-btn" onclick="updateExistingItem()">Update</button>
+        <button class="cancel-btn" onclick="updateExistingItem()">Cancel</button>
+    </div>
+    <div class="table-wraper">
+            <table id="user-data-list"></table>
+    </div>
+    <script src="assets/script/index.js"></script>
+</body>
+</html>
